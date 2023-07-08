@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kalam', cursive;
+}
+
+body {
+    line-height: 1, 6;
+    font-weight: bold;
+    text-align: center;
+    margin: 40px 0 60px 0;
+    background-color: #fce405;
+
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+
+}
+
+#search-input {
+    width: 60%;
+    max-width: 400px;
+    padding: 10px 20px;
+    border: none;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 2);
+    border-radius: 5px;
+    font-size: 18px;
+    color: #333;
+}
+
+#search-button {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 18px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 2);
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+
+}
+
+.search-results {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.search-result {
+    margin-bottom: 60px;
+    /* margin-left: 50px; */
+    width: 30%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 2);
+
+    overflow: hidden;
+}
+
+.search-result img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: white;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.search-result a {
+    color: black;
+    font-size: 20px;
+    display: block;
+    text-decoration: none;
+    text-transform: capitalize;
+
+}
+
+.search-result:hover img {
+    background-color: wheat;
+    opacity: 0.8;
+}
+
+#show-more {
+    padding: 10px 20px;
+    background-color: rgb(30, 172, 228);
+    color: white;
+    border: none;
+    text-align: center;
+    display: block;
+    font-size: 18px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 2);
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 30px auto;
+    display: none;
+
+}
+
+@media screen and (max-width: 768px) {
+    .search-result {
+        width: 45%;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .search-result {
+        padding: 20px;
+        width: 100%;
+    }
+}
+
+.foot {
+    width: 100%;
+    height: 10%;
+    padding: 0;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+    bottom: 0;
+    margin: 0;
+    /* display: flex;
+    flex-wrap: wrap; */
+
+}
+
+.foot .credits {
+    position: relative;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    display: inline;
+    justify-content: center;
+    bottom: -24px;
+}
+
+.foot .credits .unsplash{
+    /* text-decoration: none; */
+    color: white;
+}
+
+.foot p {
+    text-align: center;
+    position: relative;
+    bottom: 27px;
+}
+
+.foot .contact {
+    position: relative;
+    color: white;
+    text-align: right;
+    bottom: 58px;
+    display: inline;
+    justify-content: center;
+    
+}
+
+.foot .contact .h4{
+     /* text-decoration: none; */
+    color: white;
+  
+    
+}
